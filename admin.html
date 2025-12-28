@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AMRT Admin Panel</title>
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="js/admin.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>AMRT Admin Panel</h1>
+  </header>
+
+  <main>
+    <div class="panel">
+      <h2>Manual Inputs</h2>
+      <div class="grid">
+        <div class="value-card">
+          <span class="label">True Velocity (mph)</span>
+          <input type="number" id="trueVelocity">
+        </div>
+        <div class="value-card">
+          <span class="label">Storm Direction</span>
+          <input type="text" id="stormDirection">
+        </div>
+        <div class="value-card">
+          <span class="label">Storm Speed (mph)</span>
+          <input type="number" id="stormSpeed">
+        </div>
+        <div class="value-card">
+          <span class="label">Hook Echo</span>
+          <input type="text" id="hookEcho">
+        </div>
+        <div class="value-card">
+          <span class="label">Mesocyclone Center</span>
+          <input type="text" id="mesoCenter">
+        </div>
+        <div class="value-card">
+          <span class="label">Radar Degraded By</span>
+          <input type="text" id="radarDegraded">
+        </div>
+        <div class="value-card">
+          <span class="label">Environmental Alerts</span>
+          <input type="text" id="envAlerts">
+        </div>
+        <div class="value-card">
+          <span class="label">Rotation RPM</span>
+          <input type="number" id="rotationRPM">
+        </div>
+      </div>
+      <button id="updateBtn">Update Values</button>
+    </div>
+  </main>
+</body>
+</html>

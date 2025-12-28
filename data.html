@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AMRT Radar - Live Data</title>
+  <link rel="stylesheet" href="css/data.css">
+</head>
+<body>
+  <header>
+    <h1>AMRT Advanced Mobile Radar Team – Live Data</h1>
+  </header>
+
+  <main>
+    <!-- Radar Motion & Velocity -->
+    <section class="panel">
+      <h2>Radar Motion & Velocity</h2>
+      <div class="grid">
+        <div class="value-card">
+          <span class="label">Inbound Velocity</span>
+          <span class="value" id="inbound">--</span>
+          <span class="timer" id="inbound-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Outbound Velocity</span>
+          <span class="value" id="outbound">--</span>
+          <span class="timer" id="outbound-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Velocity Couplet</span>
+          <span class="value" id="velocityCouplet">--</span>
+          <span class="timer" id="couplet-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Couplet Size (km)</span>
+          <span class="value" id="coupletSize">--</span>
+          <span class="timer" id="coupletSize-timer">--</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Storm & Mesocyclone Info -->
+    <section class="panel">
+      <h2>Storm & Mesocyclone</h2>
+      <div class="grid">
+        <div class="value-card">
+          <span class="label">Storm Moving</span>
+          <span class="value" id="stormDirection">--</span>
+          <span class="value" id="stormSpeed">--</span>
+          <span class="timer" id="storm-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Hook Echo</span>
+          <span class="value" id="hookEcho">--</span>
+          <span class="timer" id="hook-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Mesocyclone Center</span>
+          <span class="value" id="mesocyclone">--</span>
+          <span class="timer" id="mesocyclone-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Radar Returns Degraded By</span>
+          <span class="value" id="degraded">--</span>
+          <span class="timer" id="degraded-timer">--</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Radar Signal & Weather Metrics -->
+    <section class="panel">
+      <h2>Radar Signal & Weather</h2>
+      <div class="grid">
+        <div class="value-card">
+          <span class="label">Reflectivity (dBZ)</span>
+          <span class="value" id="reflectivity">--</span>
+          <span class="timer" id="reflectivity-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">High Reflectivity Core</span>
+          <span class="value" id="highCore">--</span>
+          <span class="timer" id="highCore-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Possible Hail Core</span>
+          <span class="value" id="hailCore">--</span>
+          <span class="timer" id="hailCore-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Precipitation / Hail Size</span>
+          <span class="value" id="precipitation">--</span>
+          <span class="timer" id="precipitation-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Radar Confidence Level</span>
+          <span class="value" id="confidence">--</span>
+          <span class="timer" id="confidence-timer">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Environmental Alerts</span>
+          <span class="value" id="alerts">--</span>
+          <span class="timer" id="alerts-timer">--</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tornado Info -->
+    <section class="panel">
+      <h2>Tornado Info</h2>
+      <div class="grid">
+        <div class="value-card">
+          <span class="label">Tornado Intensity Estimate</span>
+          <span class="value" id="efRating">--</span>
+          <span class="timer" id="efRating-timer">--</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Radar Equipment Info -->
+    <section class="panel">
+      <h2>Radar Equipment</h2>
+      <div class="grid">
+        <div class="value-card">
+          <span class="label">Radar Vehicle</span>
+          <span class="value" id="radarVehicle">--</span>
+        </div>
+        <div class="value-card">
+          <span class="label">Rotation Speed (RPM)</span>
+          <span class="value" id="rotationSpeedDisplay">--</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/radar.js"></script>
+</body>
+</html>
+
+
