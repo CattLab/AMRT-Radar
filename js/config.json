@@ -1,0 +1,11 @@
+{
+  "radarVehicle": "Talos",
+  "rotationSpeed": 50,
+  "trueVelocity": 25,
+  "stormDirection": "NE",
+  "stormSpeed": 50,
+  "hookEcho": "N of Landmark",
+  "mesocyclone": "5 km NE of radar",
+  "degraded": "--",
+  "alerts": "None"
+}
