@@ -1,0 +1,78 @@
+/* ----------------- Basic Reset ----------------- */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', Consolas, monospace;
+  height: 100%;
+  overflow: hidden;
+  color: #fff;
+  background-color: #1b1b1b; /* dark slate background */
+}
+
+/* ----------------- Navbar ----------------- */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(25, 25, 25, 0.95);
+  padding: 12px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  margin: 0 8px;
+  border-radius: 3px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: rgba(204, 0, 0, 0.6);
+}
+
+.navbar a.active {
+  background-color: rgba(204, 0, 0, 0.9);
+}
+
+/* ----------------- Main Content ----------------- */
+.content {
+  padding: 130px 20px 40px 20px;
+  max-width: 950px;
+  margin: 0 auto;
+  color: #fff;
+  max-height: calc(100vh - 140px);
+  overflow-y: auto; /* allows scrolling if content exceeds screen */
+}
+
+/* ----------------- Panels ----------------- */
+.panel {
+  background-color: rgba(30, 30, 30, 0.85);
+  border-radius: 5px; /* sharper corners */
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 18px rgba(0,0,0,0.7);
+  border-left: 4px solid #cc0000; /* subtle red accent */
+}
+
+.panel h2 {
+  font-size: 1.45em;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.panel p {
+  font-size: 1.1em;
+  margin: 6px 0;
+}
+
+.panel span {
+  font-weight: bold;
+  color: #ff5555; /* red accent for values */
+}
